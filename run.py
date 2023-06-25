@@ -62,7 +62,7 @@ def main():
             try:
                 value = int(input("Enter value: "))
                 if(value >= 0 and value <=8):
-                    if value in xState:
+                    if xState[value] == 1:
                         print(f"[Error] Already Marked")
                         turn = 0
                     else:
@@ -82,7 +82,11 @@ def main():
             try:
                 value = int(input("Enter value: "))
                 if(value >= 0 and value <=8):
-                    zState[value] = 1
+                    if(zState[value] == 1):
+                        print(f"[Error] Already Marked")
+                        turn = 1
+                    else:
+                        zState[value] = 1
                 else:
                     print(f"[Error] Please input numbers from 0 to 8")
                     turn = 0

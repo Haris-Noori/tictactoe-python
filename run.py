@@ -37,8 +37,10 @@ def main():
             xState[value] = 1
         
         else:
-            print("X's chance")
+            print("O's chance")
             value = int(input("Enter value: "))
             zState[value] = 1
+
+        turn = 1 - turn
 
 main()

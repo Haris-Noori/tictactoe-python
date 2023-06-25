@@ -21,6 +21,25 @@ def print_board(xState, zState):
     print(f"| {six} | {seven} | {eight} |")
     print(f"=============")
 
+def check_win(xState, zState):
+    xWins = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+    ]
+
+    for win in xWins:
+        if(sum(xState[win[0]], xState[win[1]], xState[win[2]]) == 3):
+            return 1
+        if(sum(zState[win[0]], zState[win[1]], zState[win[2]]) == 3):
+            return 0
+        
+    return -1
 
 def main():
     xState = [0,0,0,0,0,0,0,0,0]
@@ -32,11 +51,13 @@ def main():
     while(True):
         print_board(xState, zState)
         if(turn == 1):
+            print(f"")
             print("X's chance")
             value = int(input("Enter value: "))
             xState[value] = 1
         
         else:
+            print(f"")
             print("O's chance")
             value = int(input("Enter value: "))
             zState[value] = 1

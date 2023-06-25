@@ -23,8 +23,8 @@ def print_board(xState, zState):
 
 
 def main():
-    xState = [0,0,0,0,0,0,0,0]
-    zState = [0,0,0,0,0,0,0,0]
+    xState = [0,0,0,0,0,0,0,0,0]
+    zState = [0,0,0,0,0,0,0,0,0]
     turn = 1    # 1 for X and 0 for O
 
     print("*** WELCOME TO TIC TAC TOE GAME ***")

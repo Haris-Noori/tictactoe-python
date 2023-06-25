@@ -61,7 +61,15 @@ def main():
 
             try:
                 value = int(input("Enter value: "))
-                xState[value] = 1
+                if(value >= 0 and value <=8):
+                    if value in xState:
+                        print(f"[Error] Already Marked")
+                        turn = 0
+                    else:
+                        xState[value] = 1
+                else:
+                    print(f"[Error] Please input numbers from 0 to 8")
+                    turn = 0
 
             except ValueError:
                 print(f"[Error] Please input numbers from 0 to 8")
@@ -73,7 +81,11 @@ def main():
 
             try:
                 value = int(input("Enter value: "))
-                zState[value] = 1
+                if(value >= 0 and value <=8):
+                    zState[value] = 1
+                else:
+                    print(f"[Error] Please input numbers from 0 to 8")
+                    turn = 0
 
             except ValueError:
                 print(f"[Error] Please input numbers from 0 to 8")

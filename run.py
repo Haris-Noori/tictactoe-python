@@ -68,7 +68,7 @@ def main():
             zState[value] = 1
 
         cwin = check_win(xState, zState)
-        if(cwin!= -1):
+        if(cwin != -1):
             break
 
         turn = 1 - turn

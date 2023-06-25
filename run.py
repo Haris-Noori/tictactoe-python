@@ -2,6 +2,9 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
+def sum(a,b,c):
+    return a + b + c
+
 def print_board(xState, zState):
     zero = 'X' if xState[0] else ('O' if zState[0] else 0)
     one = 'X' if xState[1] else ('O' if zState[1] else 1)
@@ -35,8 +38,10 @@ def check_win(xState, zState):
 
     for win in xWins:
         if(sum(xState[win[0]], xState[win[1]], xState[win[2]]) == 3):
+            print(f"X won the match")
             return 1
         if(sum(zState[win[0]], zState[win[1]], zState[win[2]]) == 3):
+            print(f"O won the match")
             return 0
         
     return -1
@@ -61,6 +66,10 @@ def main():
             print("O's chance")
             value = int(input("Enter value: "))
             zState[value] = 1
+
+        cwin = check_win(xState, zState)
+        if(cwin!= -1):
+            break
 
         turn = 1 - turn
 

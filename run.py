@@ -38,9 +38,11 @@ def check_win(xState, zState):
 
     for win in xWins:
         if(sum(xState[win[0]], xState[win[1]], xState[win[2]]) == 3):
+            print_board(xState, zState)
             print(f"X won the match ;)")
             return 1
         if(sum(zState[win[0]], zState[win[1]], zState[win[2]]) == 3):
+            print_board(xState, zState)
             print(f"O won the match ;)")
             return 0
         
@@ -89,7 +91,7 @@ def main():
                         zState[value] = 1
                 else:
                     print(f"[Error] Please input numbers from 0 to 8")
-                    turn = 0
+                    turn = 1
 
             except ValueError:
                 print(f"[Error] Please input numbers from 0 to 8")
@@ -98,6 +100,7 @@ def main():
         cwin = check_win(xState, zState)
         if(cwin != -1):
             print(f"*** Match Over ***")
+
             break
 
         turn = 1 - turn

@@ -24,3 +24,14 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 ![Python Linter Mockup](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/CI_python_linter.png)
 
 ## Deployment
+- Login to Heroku account
+- Click "New" in the Heroku dashboard and select ”Create new app”
+- Write a name for the app and choose your region.
+- then click ”Create App”
+- In settings, two build pack scripts were added: Python and Nodejs (in that order)
+- Connect your Heroku with your GitHub account and the repository you are working on
+- Then at the bottom, you can do a manual deployment or set it to automatic deployment to deploy every time your repo is updated.
+- In my case I chose manual deployment
+
+
+  

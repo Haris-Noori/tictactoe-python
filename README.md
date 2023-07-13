@@ -34,4 +34,10 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 - In my case I chose manual deployment
 ![Heroku Deployment](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/deployment.png)
 
-  
+## Credits
+- To [StackOverFlow](https://stackoverflow.com/), for help me fixing the logic,
+- To [W3Schools](https://www.w3schools.com/python/), for some syntax help
+
+## Acknowledgments
+My Mentor [Lauren Nicole](https://www.linkedin.com/in/lauren-nicole-popich/), for informative sessions and helpful feedback.
+

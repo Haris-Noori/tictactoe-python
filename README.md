@@ -18,7 +18,16 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 - after every mark, the board will update and print
 - if one of the player first managed to complete the one of the sequences, the game will be over and the winner will be announced
 - a player can only input integer value from 0 to 8, no alpha, no alphanumeric or negative integers, or special characters
-- All datatype checkes have been completed and tested
+- All datatype checkes have been completed and tested, and the code doesn't BREAK
+
+### Player X chance
+![X's chance](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/x_chance.png)
+
+### Player O chance
+![O's chance](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/o_chance.png)
+
+### Game Over
+![X's chance](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/won_the_match.png)
 
 
 ## Fixed & UnFixed Bugs

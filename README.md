@@ -6,7 +6,7 @@ TicTacToe is world's largest playing game, on paper and pens, boards, walls and 
 
 Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 
-
+## Am I Responsive Screenshot
 ![Responsice Mockup](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/AmIResponsive.png)
 
 
@@ -16,3 +16,9 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 - they can only do it once, can't change the position,
 - a user can only input integer value from 0 to 8, no alpha, no alphanumeric or negative integers,
 - All datatype checkes have been completed
+
+## Fixed & UnFixed Bugs
+
+## Code Institute Python Linter Screenshot
+
+## Deployment

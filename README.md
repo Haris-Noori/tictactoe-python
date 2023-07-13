@@ -10,12 +10,16 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 ![Responsive Mockup](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/AmIResponsive.png)
 
 
-## Features
-- A user can be an player X or player O, so there are two players
+## Features & User Stories
+- So there are two real players, who will play this game, one user can be a player X and second one can be player O, 
 - both players will get the chance to put their mark on the board one by one
-- they can only do it once, can't change the position,
-- a user can only input integer value from 0 to 8, no alpha, no alphanumeric or negative integers,
+- the mark will only be X or O
+- they can only do it once, can't change the position of the mark,
+- after every mark, the board will update and print
+- if one of the player first managed to complete the one of the sequences, the game will be over and the winner will be announced
+- a player can only input integer value from 0 to 8, no alpha, no alphanumeric or negative integers, or special characters
 - All datatype checkes have been completed and tested
+
 
 ## Fixed & UnFixed Bugs
 - There no Unfixed bugs, but there was a bug at the end of final review. So there are only 0 to 8 integers allowed but when I tried to put value 9 it showed that it is not acceptable but it still pass the turn to next player. So I figuered it out, the solution was to put a check at O'player, if value is nine then it should also let the user try again, not just skip the turn.

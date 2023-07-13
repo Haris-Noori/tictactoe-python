@@ -8,3 +8,11 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 
 
 ![Responsice Mockup](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/AmIResponsive.png)
+
+
+## Features
+- A user can be an player X or player O, so there are two players
+- both players will get the chance to put their mark on the board one by one
+- they can only do it once, can't change the position,
+- a user can only input integer value from 0 to 8, no alpha, no alphanumeric or negative integers,
+- All datatype checkes have been completed

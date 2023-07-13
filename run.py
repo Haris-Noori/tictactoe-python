@@ -1,7 +1,10 @@
 def sum(a,b,c):
+    """ to overwrite the function of sum in python, to check if any pattern matched to win the game """
     return a + b + c
 
 def print_board(xState, zState):
+    """ takes both states, and print the board on the console """
+
     zero = 'X' if xState[0] else ('O' if zState[0] else 0)
     one = 'X' if xState[1] else ('O' if zState[1] else 1)
     two = 'X' if xState[2] else ('O' if zState[2] else 2)
@@ -21,6 +24,8 @@ def print_board(xState, zState):
     print(f"=============")
 
 def check_win(xState, zState):
+    """ takes both the states, and check each time if any of the player has managed to win the game or not """
+    
     xWins = [
         [0,1,2],
         [3,4,5],
@@ -44,7 +49,14 @@ def check_win(xState, zState):
         
     return -1
 
-def start_game(xState, zState, turn):
+def start_game():
+    """ Displays the intro message, and take inputs from the players, check the datatype and pass to next functions  """
+
+    xState = [0,0,0,0,0,0,0,0,0]
+    zState = [0,0,0,0,0,0,0,0,0]
+    turn = 1    # 1 for X and 0 for O
+
+    print("*** WELCOME TO TIC TAC TOE GAME ***")
     
     while(True):
         print_board(xState, zState)
@@ -91,19 +103,14 @@ def start_game(xState, zState, turn):
         cwin = check_win(xState, zState)
         if(cwin != -1):
             print(f"*** Match Over ***")
-
             break
 
         turn = 1 - turn
 
 
 def main():
-    xState = [0,0,0,0,0,0,0,0,0]
-    zState = [0,0,0,0,0,0,0,0,0]
-    turn = 1    # 1 for X and 0 for O
-
-    print("*** WELCOME TO TIC TAC TOE GAME ***")
+    """ Starts the game function """
     
-    start_game(xState, zState, turn)
+    start_game()
 
 main()

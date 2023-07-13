@@ -1,6 +1,6 @@
 # TicTacToe Python
 
-Welcome to the TicTacToe game made in Python Language, by Haris Noori.
+Welcome to the TicTacToe game made in Python Language, by [Haris Noori](https://haris-noori.github.io).
 
 TicTacToe is world's largest playing game, on paper and pens, boards, walls and floors, but here it is, the game is now available to play on online website. This is a two player game, so you must need an opponent, to play the game.
 
@@ -31,7 +31,7 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 
 
 ## Fixed & UnFixed Bugs
-- There no Unfixed bugs, but there was a bug at the end of final review. So there are only 0 to 8 integers allowed but when I tried to put value 9 it showed that it is not acceptable but it still pass the turn to next player. So I figuered it out, the solution was to put a check at O'player, if value is nine then it should also let the user try again, not just skip the turn.
+- There no Unfixed bugs, but there was a bug at the end of final review. So there are only 0 to 8 integers allowed but when I tried to put value 9 it showed that it is not acceptable but it still pass the turn to next player. So I figured it out, the solution was to put a check at O'player, if value is nine then it should also let the user try again, not just skip the turn.
 
 ## Code Institute Python Linter Screenshot
 ![Python Linter](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/CI_python_linter.png)

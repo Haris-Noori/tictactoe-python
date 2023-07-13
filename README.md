@@ -21,7 +21,7 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 - There no Unfixed bugs, but there was a bug at the end of final review. So there are only 0 to 8 integers allowed but when I tried to put value 9 it showed that it is not acceptable but it still pass the turn to next player. So I figuered it out, the solution was to put a check at O'player, if value is nine then it should also let the user try again, not just skip the turn.
 
 ## Code Institute Python Linter Screenshot
-![Python Linter Mockup](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/CI_python_linter.png)
+![Python Linter](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/CI_python_linter.png)
 
 ## Deployment
 - Login to Heroku account
@@ -32,6 +32,6 @@ Link to the game: [PLAY](https://tictactoe-python-acf2f2ecbb0f.herokuapp.com/)
 - Connect your Heroku with your GitHub account and the repository you are working on
 - Then at the bottom, you can do a manual deployment or set it to automatic deployment to deploy every time your repo is updated.
 - In my case I chose manual deployment
-
+![Heroku Deployment](https://github.com/Haris-Noori/tictactoe-python/blob/main/assets/img/deployment.png)
 
   
